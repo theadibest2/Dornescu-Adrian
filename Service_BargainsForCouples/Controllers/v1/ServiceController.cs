@@ -52,7 +52,7 @@ namespace Service_BargainsForCouples.Controllers.v1
             IEnumerable<HotelEntity> hotels = new List<HotelEntity>();
             try
             {
-                s_cts.CancelAfter(isFirstRequest ? 500 : 950); //The first request is performed slower because the services have to load and we have to  prevent exceding the 1 sec 
+                s_cts.CancelAfter(isFirstRequest ? 500 : 930); //The first request is performed slower because the services have to load and we have to  prevent exceding the 1 sec 
                 isFirstRequest = false;
                 string fullUrl = string.Format("{0}{1}?code={2}&destinationId={3}&nights={4}", _cfg.Value.UrlApi, ConstantsConfiguration.PROVIDER_ENDPOINT_FIND_BARGAIN, _cfg.Value.Token, destinationId, noNights);
                 hotels = await _provider.ProcessUrlAsync(fullUrl, 2, s_cts.Token);
