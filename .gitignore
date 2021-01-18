@@ -1,0 +1,14 @@
+
+Service_BargainsForCouples/bin/
+
+Service_BargainsForCouples/obj/
+
+Service_BargainsForCouples.Data/bin/
+
+Service_BargainsForCouples.Data/obj/
+
+Service_BargainsForCouples.Provider/obj/
+
+Service_BargainsForCouples.Provider/bin/
+
+.vs/
